@@ -14,6 +14,7 @@ if not cap.isOpened():
 
 while True:
     ret, frame = cap.read()
+    # frame = cap.read()[1]
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
